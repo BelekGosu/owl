@@ -21,9 +21,12 @@ import ScaleFadeEx from '../components/fade'
 import Contact from '../components/contact'
 
 
+
+
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
+
 
 
 
@@ -84,25 +87,24 @@ const Home = () => (
   >
 
           <Box
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            w="100px"
-            h="100px"
+           
+            w="200px"
+            h="200px"
             display="inline-block"
             borderRadius="full"
             overflow="hidden"
 
           >
+           <img src='https://raw.githubusercontent.com/judygab/web-dev-projects/fc630d643b3cd16d77dcad71bcac7660cdd26731/personal-portfolio/src/assets/img/contact-img.svg'/>
            
-            <ProfileImage
+            {/* <ProfileImage
               src="/images/boy2.png"
               alt="Profile image"
               borderRadius="full"
               width="100%"
               height="100%"
-              
-            />
+          
+            /> */}
             </Box>
          
             </motion.button>
